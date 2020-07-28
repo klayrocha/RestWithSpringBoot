@@ -1,4 +1,4 @@
-package com.klayrocha.restwithspringboot;
+package com.klayrocha.restwithspringboot.data.model;
 
 public class Greeting {
 
