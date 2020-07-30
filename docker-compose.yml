@@ -20,13 +20,13 @@ services:
   rest-with-spring-boot:
     image: klayrocha/rest-with-spring-boot
     restart: always
-    build: ./RestWithSpringBoot
-    working_dir: /RestWithSpringBoot
+    build: .
+    working_dir: .
     environment:
       TZ: America/Sao_Paulo
       SPRING_BOOT_ENVIRONMENT: Production
     volumes:
-      - ./RestWithSpringBoot:/RestWithSpringBoot
+      - .:/RestWithSpringBoot
       - ~/.m2:/root/.m2
     ports:
       - "8080:8080"
