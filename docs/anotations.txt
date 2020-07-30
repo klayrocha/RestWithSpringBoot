@@ -14,3 +14,7 @@ http://localhost:8080/swagger-ui.html
 docker-compose up -d --build
 
 docker-compose down
+
+docker login docker.io
+
+docker push nome_image
